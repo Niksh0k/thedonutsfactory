@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Donuts Factory</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Gugi', sans-serif;
+        }
+
+        .button {
+            background-color: none;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            padding: 8px 18px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #111;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <div class="relative bg-cover bg-center bg-no-repeat h-[130vh] bg-[url('img/background.png')]">
+        <header class="flex justify-between items-center p-10 px-80">
+            <div class="text-4xl">The Donuts<br>Factory</div>
+            <nav class="flex space-x-4">
+                <a href="#about" class="button">About Us</a>
+                <a href="#catalog" class="button">Catalog</a>
+                <a href="#contacts" class="button">Contacts</a>
+            </nav>
+        </header>
+        <section class="h-[80vh] flex items-center relative">
+            <div class="absolute top-1/2 left-1/2 -translate-x-[70%] -translate-y-[80%] px-6">
+                <h1 class="text-6xl leading-tight text-left">
+                    The Donuts Factory<br>the most delicious and<br>fresh
+                </h1>
+            </div>
+        </section>
+    </div>
+
+    <section class="relative p-10 px-80 w-full h-[30vh]">
+        <h1 class="text-4xl mb-4 text-center">Always</h1>
+
+        <div class="flex justify-center gap-8">
+            <div class="text-center">
+                <img src="img/icons/big/fast.png" alt="Image 1" class="w-16 h-16 mx-auto">
+                <p class="mt-2 text-lg">Fast</p>
+            </div>
+            <div class="text-center">
+                <img src="img/icons/big/qualitatively.png" alt="Image 2" class="w-16 h-16 mx-auto">
+                <p class="mt-2 text-lg">Qualitatively</p>
+            </div>
+            <div class="text-center">
+                <img src="img/icons/big/tasty.png" alt="Image 3" class="w-16 h-16 mx-auto">
+                <p class="mt-2 text-lg">Tasty</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="relative p-10 px-80 w-full h-[95vh]">
+        <h1 class="text-4xl font-bold mb-4"><u>About Us</u></h1>
+        <div class="relative flex flex-col md:flex-row items-start md:space-x-8">
+            <div class="flex-1 relative">
+                <img src="img/about-top.jpg" alt="donuts" class="rounded-3xl mb-4">
+                <p class="text-2xl absolute top-0 ml-96 pl-40 mt-20">
+                    Doughnuts are usually <u>deep fried</u> from a <u>flour dough></u>, but other types of
+                    <u>batters</u> can also be used.
+                    Various toppings and flavors are used for different types, such as <u>sugar</u>, <u>chocolate</u> or
+                    <u>maple</u>glazing.
+                    Doughnuts may also include water, <u>leavening</u>, eggs, milk, sugar, oil,
+                    <u>shortening</u>, and natural or artificial flavors.
+                </p>
+                <div class="absolute bottom-[-200px] left-1/3 transform -translate-x-1/2">
+                    <img src="img/about-bottom.jpg" alt="making donuts" class="rounded-3xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="py-16 px-80">
+        <h2 class="text-4xl mb-6 text-right"><u>Catalog</u></h2>
+        <div class="mt-40 space-y-12 px-32">
+            <div class="flex flex-col md:flex-row md:items-start md:space-x-8">
+                <img src="img/donut1.png" alt="Donut 1">
+                <p class="md:w-2/3 mt-40 text-xl">
+                    Doughnuts are usually deep fried from a flour dough, but other types of batters can
+                    also be used. Various toppings and flavors are used for different types, such as sugar, chocolate or
+                    maple glazing.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-start md:space-x-8 md:flex-row-reverse">
+                <img src="img/donut2.png" alt="Donut 2">
+                <p class="md:w-2/3 mt-40 text-xl">
+                    Doughnuts are usually deep fried from a flour dough, but other types of batters can
+                    also be used. Various toppings and flavors are used for different types, such as sugar, chocolate or
+                    maple glazing.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-start md:space-x-8">
+                <img src="img/donut3.png" alt="Donut 3">
+                <p class="md:w-2/3 mt-40 text-xl">
+                    Doughnuts are usually deep fried from a flour dough, but other types of batters can
+                    also be used. Various toppings and flavors are used for different types, such as sugar, chocolate or
+                    maple glazing.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-start md:space-x-8 md:flex-row-reverse">
+                <img src="img/donut4.png" alt="Donut 4">
+                <p class="md:w-2/3 mt-40 text-xl">
+                    Doughnuts are usually deep fried from a flour dough, but other types of batters can
+                    also be used. Various toppings and flavors are used for different types, such as sugar, chocolate or
+                    maple glazing.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="py-16 px-80 h-screen">
+        <h1 class="text-4xl font-bold mb-4"><u>Contacts</u></h1>
+        <div class="flex flex-col md:flex-row justify-center items-center h-[40vh] p-4">
+            <div class="max-w-sm m-4 p-4 mr-80">
+                <h2 class="text-3xl mb-2 mt-80">Dan</h2>
+                <h2 class="text-3xl mb-2">Programmer</h2>
+                <div class="flex items-center mb-2">
+                    <img src="img/icons/small/whatsapp.png" alt="WhatsApp" class="w-10 h-10 mr-2">
+                    <span class="text-xl">+81 9999 9999</span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/icons/small/instagram.png" alt="Instagram" class="w-10 h-10 mr-2">
+                    <span class="text-xl">@mocktest</span>
+                </div>
+                <div class="flex items-center">
+                    <img src="img/icons/small/google.png" alt="Google" class="w-10 h-10 mr-2">
+                    <span class="text-xl">@mocktest</span>
+                </div>
+            </div>
+            <div class="max-w-sm m-4 p-4">
+                <h2 class="text-3xl mb-2">Lore</h2>
+                <h2 class="text-3xl mb-2">Illustration artist & designer</h2>
+                <div class="flex items-center mb-2">
+                    <img src="img/icons/small/whatsapp.png" alt="WhatsApp" class="w-10 h-10 mr-2">
+                    <span class="text-xl">+81 9999 9999</span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <img src="img/icons/small/instagram.png" alt="Instagram" class="w-10 h-10 mr-2">
+                    <span class="text-xl">@mocktest</span>
+                </div>
+                <div class="flex items-center">
+                    <img src="img/icons/small/google.png" alt="Google" class="w-10 h-10 mr-2">
+                    <span class="text-xl">@mocktest</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
